@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>2016 NBA Slot Champ</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<main class="inner_container" ng-controller="MainController">
+	<h1 class="title" ng-init>{{ title }}</h1>
+	<div id="slot_machine">
+    	<div id="slots">
+        	<div class="slot" id="west_slot">    
+            </div><!-- end # west_slot -->
+            <div class="slot" id="center_slot">
+            </div><!-- end # center_slot -->
+            <div class="slot" id="east_slot">    
+            </div><!-- end # east_slot -->
+        </div><!-- end #slots -->    
+    </div><!--end #slot_machine -->
+    <div id="button" onClick="press()">
+    </div>
+    <div id="winners">
+    	<h2 class="pulse" id="finalsWinningTeam"></h2>
+    </div><!-- end #winners -->
+<footer>
+	<h4 ng-init>{{ stats }}</h4> 
+    <h4 ng-init>{{ rights }}</h4>
+</footer>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
